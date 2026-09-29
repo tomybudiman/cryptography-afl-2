@@ -4,8 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "tsx",
-    "dev": "tsx watch",
+    "start": "cd \"$INIT_CWD\" && tsx",
+    "dev": "cd \"$INIT_CWD\" && tsx watch",
     "typecheck": "tsc --noEmit"
   },
   "packageManager": "yarn@1.22.22",
