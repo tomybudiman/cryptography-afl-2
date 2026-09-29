@@ -1,0 +1,17 @@
+{
+  "name": "exercise",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "tsx",
+    "dev": "tsx watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "packageManager": "yarn@1.22.22",
+  "devDependencies": {
+    "@types/node": "^22",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
