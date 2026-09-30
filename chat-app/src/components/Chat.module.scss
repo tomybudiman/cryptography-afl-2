@@ -8,6 +8,12 @@ $color-border-input: #d1d5db;
 $color-primary: #2563eb;
 $color-primary-hover: #1d4ed8;
 $color-primary-light: #dbeafe;
+$color-danger: #dc2626;
+$color-danger-bg: #fef2f2;
+$color-danger-border: #fecaca;
+$color-warn: #b45309;
+$color-warn-bg: #fffbeb;
+$color-warn-border: #fde68a;
 
 $status-colors: (
   connecting: #9ca3af,
@@ -87,6 +93,12 @@ $radius-lg: 0.75rem;
     font-size: 1.125rem;
   }
 
+  &__count {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: $color-text-subtle;
+  }
+
   &__messages {
     display: flex;
     flex-direction: column;
@@ -131,6 +143,24 @@ $radius-lg: 0.75rem;
         color: $color-primary-light;
       }
     }
+
+    &--flagged {
+      color: $color-text;
+      background: $color-danger-bg;
+      border-color: $color-danger-border;
+
+      #{$block}__sender {
+        color: $color-danger;
+      }
+    }
+  }
+
+  &__warning {
+    display: block;
+    margin-top: 0.375rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: $color-danger;
   }
 
   &__sender {
@@ -139,6 +169,20 @@ $radius-lg: 0.75rem;
     font-size: 0.75rem;
     font-weight: 600;
     color: $color-text-muted;
+  }
+
+  &__impersonating {
+    margin: 0 0 0.5rem;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+    color: $color-warn;
+    background: $color-warn-bg;
+    border: 1px solid $color-warn-border;
+    border-radius: $radius-sm;
+
+    code {
+      font-family: ui-monospace, monospace;
+    }
   }
 
   &__form {
