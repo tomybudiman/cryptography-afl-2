@@ -1,0 +1,21 @@
+{
+  "name": "chat-app-backend",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/server.ts",
+    "dev": "tsx watch src/server.ts",
+    "start:malicious": "tsx src/malicious-server.ts",
+    "dev:malicious": "tsx watch src/malicious-server.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "packageManager": "yarn@4.18.0",
+  "dependencies": {
+    "socket.io": "^4.8.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}

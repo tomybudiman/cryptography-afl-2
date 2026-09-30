@@ -11,9 +11,6 @@ $color-primary-light: #dbeafe;
 $color-danger: #dc2626;
 $color-danger-bg: #fef2f2;
 $color-danger-border: #fecaca;
-$color-warn: #b45309;
-$color-warn-bg: #fffbeb;
-$color-warn-border: #fde68a;
 
 $status-colors: (
   connecting: #9ca3af,
@@ -171,13 +168,20 @@ $radius-lg: 0.75rem;
     color: $color-text-muted;
   }
 
-  &__impersonating {
+  &__cipher {
+    display: block;
+    overflow-wrap: anywhere;
+    font-family: ui-monospace, monospace;
+    font-size: 0.8125rem;
+    color: $color-text-subtle;
+  }
+
+  &__secret {
     margin: 0 0 0.5rem;
     padding: 0.5rem 0.75rem;
     font-size: 0.875rem;
-    color: $color-warn;
-    background: $color-warn-bg;
-    border: 1px solid $color-warn-border;
+    color: $color-primary;
+    background: $color-primary-light;
     border-radius: $radius-sm;
 
     code {
